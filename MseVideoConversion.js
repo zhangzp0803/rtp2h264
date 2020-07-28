@@ -695,7 +695,7 @@ class MseVideoConversion {
    */
   g726AudioDecoding(rtpFrame) {
     if (this.g726Coder == null && this.audioWasm != null) {
-      this.g726Coder = new G726(this.audioWasm, this.memory, 4);
+      this.g726Coder = new G726(this.audioWasm, this.memory, 5);
     }
 
     if (this.g726Coder != null) {

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06aef735-c7fd-4e3d-bc0e-8b6d785619fd" name="Default" comment="init">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/rtp2h264.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="06aef735-c7fd-4e3d-bc0e-8b6d785619fd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/g726/adpcm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/g726/audio.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/g726/g711.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/g726/g726.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/g726/pcm_player.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/MseVideoConversion.js" afterPath="$PROJECT_DIR$/MseVideoConversion.js" />
-      <change beforePath="$PROJECT_DIR$/g726/rtp.js" afterPath="$PROJECT_DIR$/g726/rtp.js" />
-      <change beforePath="$PROJECT_DIR$/g726/std.js" afterPath="$PROJECT_DIR$/g726/std.js" />
       <change beforePath="$PROJECT_DIR$/h264.html" afterPath="$PROJECT_DIR$/h264.html" />
       <change beforePath="$PROJECT_DIR$/realTimeVideoLoad1.js" afterPath="$PROJECT_DIR$/realTimeVideoLoad1.js" />
     </list>
@@ -27,28 +27,18 @@
       <file leaf-file-name="rtp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/g726/rtp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1820">
+            <state relative-caret-position="0">
               <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56784">
-              <caret line="2041" column="30" lean-forward="false" selection-start-line="2041" selection-start-column="30" selection-end-line="2041" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="h264.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="h264.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h264.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="392">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -56,20 +46,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="g726.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/g726/g726.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="realTimeVideoLoad1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/realTimeVideoLoad1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52976">
-              <caret line="1892" column="52" lean-forward="false" selection-start-line="1892" selection-start-column="48" selection-end-line="1892" selection-end-column="52" />
+            <state relative-caret-position="223">
+              <caret line="1115" column="116" lean-forward="false" selection-start-line="1115" selection-start-column="101" selection-end-line="1115" selection-end-column="116" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1595928142453" expanded="true" signature="22628:22642" ph="..." />
-                <marker date="1595928142453" expanded="true" signature="64374:64385" ph="..." />
-                <marker date="1595928142453" expanded="true" signature="132704:132710" ph=" " />
-                <marker date="1595928142453" expanded="true" signature="133514:133520" ph=" " />
-                <marker date="1595928142453" expanded="true" signature="179398:179435" ph="..." />
-                <marker date="1595928142453" expanded="true" signature="179563:179600" ph="..." />
+                <element signature="e#50229#51164#0" expanded="false" />
+                <marker date="1595933250937" expanded="true" signature="22628:22642" ph="..." />
+                <marker date="1595933250937" expanded="true" signature="64417:64428" ph="..." />
+                <marker date="1595933250937" expanded="true" signature="132747:132753" ph=" " />
+                <marker date="1595933250937" expanded="true" signature="133557:133563" ph=" " />
+                <marker date="1595933250937" expanded="true" signature="179441:179478" ph="..." />
+                <marker date="1595933250937" expanded="true" signature="179606:179643" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pcm_player.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/g726/pcm_player.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,18 +88,18 @@
       <file leaf-file-name="std.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/g726/std.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1204">
-              <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="1680">
+              <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MseVideoConversion.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MseVideoConversion.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MseVideoConversion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15120">
-              <caret line="540" column="9" lean-forward="false" selection-start-line="540" selection-start-column="9" selection-end-line="540" selection-end-column="9" />
+            <state relative-caret-position="279">
+              <caret line="699" column="0" lean-forward="true" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,11 +109,23 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ws</find>
       <find>videoPlaySuccess</find>
       <find>rtpBufferLenArr</find>
       <find>v_0_Source</find>
       <find>100%</find>
+      <find>audioWasm</find>
+      <find>this.audioWasm</find>
+      <find>decode</find>
+      <find>createWebAssemblyObj</find>
+      <find>importObj</find>
+      <find>createMediaSource</find>
+      <find>g726AudioDecoding</find>
+      <find>this.pcmPlayer</find>
+      <find>PCMPlayer</find>
+      <find>ws</find>
+      <find>this._bitCount</find>
+      <find>g726Coder</find>
+      <find>2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,11 +134,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MseVideoConversion.js" />
         <option value="$PROJECT_DIR$/g726/std.js" />
         <option value="$PROJECT_DIR$/g726/rtp.js" />
-        <option value="$PROJECT_DIR$/realTimeVideoLoad1.js" />
         <option value="$PROJECT_DIR$/h264.html" />
+        <option value="$PROJECT_DIR$/realTimeVideoLoad1.js" />
+        <option value="$PROJECT_DIR$/MseVideoConversion.js" />
       </list>
     </option>
   </component>
@@ -175,6 +198,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Downloads\rtp2h264\g726" />
       <recent name="C:\Users\Lenovo\Downloads\rtp2h264" />
     </key>
   </component>
@@ -204,7 +228,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595909029389</updated>
       <workItem from="1595909030530" duration="12228000" />
-      <workItem from="1595928596822" duration="3000" />
+      <workItem from="1595928596822" duration="6288000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1595909100176</created>
@@ -213,11 +237,18 @@
       <option name="project" value="LOCAL" />
       <updated>1595909100176</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="视频调通">
+      <created>1595928626139</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595928626139</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12231000" />
+    <option name="totallyTimeSpent" value="18516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
@@ -250,7 +281,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="视频调通" />
+    <option name="LAST_COMMIT_MESSAGE" value="视频调通" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -279,12 +311,13 @@
           <caret line="1892" column="52" lean-forward="false" selection-start-line="1892" selection-start-column="48" selection-end-line="1892" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1595928142453" expanded="true" signature="22628:22642" ph="..." />
-            <marker date="1595928142453" expanded="true" signature="64374:64385" ph="..." />
-            <marker date="1595928142453" expanded="true" signature="132704:132710" ph=" " />
-            <marker date="1595928142453" expanded="true" signature="133514:133520" ph=" " />
-            <marker date="1595928142453" expanded="true" signature="179398:179435" ph="..." />
-            <marker date="1595928142453" expanded="true" signature="179563:179600" ph="..." />
+            <element signature="e#50229#51164#0" expanded="false" />
+            <marker date="1595933250937" expanded="true" signature="22628:22642" ph="..." />
+            <marker date="1595933250937" expanded="true" signature="64417:64428" ph="..." />
+            <marker date="1595933250937" expanded="true" signature="132747:132753" ph=" " />
+            <marker date="1595933250937" expanded="true" signature="133557:133563" ph=" " />
+            <marker date="1595933250937" expanded="true" signature="179441:179478" ph="..." />
+            <marker date="1595933250937" expanded="true" signature="179606:179643" ph="..." />
           </folding>
         </state>
       </provider>
@@ -330,53 +363,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/g726/std.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/g726/rtp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1820">
+        <state relative-caret-position="0">
           <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MseVideoConversion.js">
+    <entry file="file://$PROJECT_DIR$/g726/adpcm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15120">
-          <caret line="540" column="9" lean-forward="false" selection-start-line="540" selection-start-column="9" selection-end-line="540" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g726/audio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g726/g711.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h264.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g726/std.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g726/audio.wasm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g726/pcm_player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g726/g726.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/realTimeVideoLoad1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52976">
-          <caret line="1892" column="52" lean-forward="false" selection-start-line="1892" selection-start-column="48" selection-end-line="1892" selection-end-column="52" />
+        <state relative-caret-position="223">
+          <caret line="1115" column="116" lean-forward="false" selection-start-line="1115" selection-start-column="101" selection-end-line="1115" selection-end-column="116" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1595928142453" expanded="true" signature="22628:22642" ph="..." />
-            <marker date="1595928142453" expanded="true" signature="64374:64385" ph="..." />
-            <marker date="1595928142453" expanded="true" signature="132704:132710" ph=" " />
-            <marker date="1595928142453" expanded="true" signature="133514:133520" ph=" " />
-            <marker date="1595928142453" expanded="true" signature="179398:179435" ph="..." />
-            <marker date="1595928142453" expanded="true" signature="179563:179600" ph="..." />
+            <element signature="e#50229#51164#0" expanded="false" />
+            <marker date="1595933250937" expanded="true" signature="22628:22642" ph="..." />
+            <marker date="1595933250937" expanded="true" signature="64417:64428" ph="..." />
+            <marker date="1595933250937" expanded="true" signature="132747:132753" ph=" " />
+            <marker date="1595933250937" expanded="true" signature="133557:133563" ph=" " />
+            <marker date="1595933250937" expanded="true" signature="179441:179478" ph="..." />
+            <marker date="1595933250937" expanded="true" signature="179606:179643" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h264.html">
+    <entry file="file://$PROJECT_DIR$/MseVideoConversion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="279">
+          <caret line="699" column="0" lean-forward="true" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

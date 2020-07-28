@@ -1144,7 +1144,7 @@ realTimeVideLoad = {
                     }
                 }
             );
-
+          videoObj.openVideoVoice(); //打开声音
 
         }
 
