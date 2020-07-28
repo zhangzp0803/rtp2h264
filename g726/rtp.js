@@ -13,6 +13,9 @@ class Rtp
     this.isCompleted = 0;
     this.payloadType = 0;
     this.flow = 0;
+    this.rtpBuffer = [];
+    this.rtpBufferLen = 0;
+    this.rtpBufferLenArr = [];
   }
 
   getFlow()
@@ -44,22 +47,50 @@ class Rtp
     this.payloadType = data[5] & 0x7f;
 
     let frameHeadLen = 30 - (this._currentType === Result.Type.AUDIO ? 4 : (this._currentType === Result.Type.TRANS_DATA ? 12 : 0));
-    this._currentTime = (data[frameHeadLen - 9] << 16) + (data[frameHeadLen - 8] << 8) + data[frameHeadLen - 7] +
+    if(this.rtpBuffer.length ===0) {
+      this._currentTime = (data[frameHeadLen - 9] << 16) + (data[frameHeadLen - 8] << 8) + data[frameHeadLen - 7] +
         data[frameHeadLen - 10] * 16777216 + data[frameHeadLen - 11] * 4294967296 + data[frameHeadLen - 12] * 1099511627776;
+    }
     this._duration = this._currentType < 3 ? (data[frameHeadLen - 4] << 8) + data[frameHeadLen - 3] : 0;
     let dataLen = data.byteLength;
     let offset = 0;
     let trueLen = 0;
     let rtpLen = 0;
-    while(rtpLen <= 950 && offset < dataLen)
-    {
-      rtpLen = (data[offset + frameHeadLen - 2] << 8) + data[offset + frameHeadLen - 1];
-      Std.memcpy(data, trueLen, data, offset + frameHeadLen, offset + frameHeadLen + rtpLen);
-      trueLen += rtpLen;
-      offset += rtpLen + frameHeadLen;
+    rtpLen = (data[offset + frameHeadLen - 2] << 8) + data[offset + frameHeadLen - 1];
+    const rtndata = Std.memcpywithreturn(data, trueLen, data, offset + frameHeadLen, offset + frameHeadLen + rtpLen);
+    this.rtpBuffer.push(rtndata);
+    this.rtpBufferLen += rtpLen;
+    this.rtpBufferLenArr.push(rtpLen);
+
+    if(this.isCompleted){
+      const testBuffer = new Uint8Array(this.rtpBufferLen);
+      let setLen = 0;
+      this.rtpBuffer.forEach((item,index) => {
+
+        if(index === 0) {
+          testBuffer.set(item,0)
+        } else {
+          setLen += this.rtpBufferLenArr[index-1];
+          testBuffer.set(item,setLen)
+        }
+
+      });
+      this.flow += testBuffer.length;
+      this.rtpBuffer = [];
+      this.rtpBufferLen  = 0;
+      this.rtpBufferLenArr = [];
+
+      return new Result(testBuffer, this._currentType, this._currentTime, Result.ErrorCode.SUCCESS, this._duration);
+    } else {
+      return false;
     }
-    this.flow += frameData.byteLength;
-    return new Result(data.subarray(0, trueLen), this._currentType, this._currentTime, Result.ErrorCode.SUCCESS, this._duration);
+    // while(rtpLen <= 950 && offset < dataLen)
+    // {
+    //   rtpLen = (data[offset + frameHeadLen - 2] << 8) + data[offset + frameHeadLen - 1];
+    //   Std.memcpy(data, trueLen, data, offset + frameHeadLen, offset + frameHeadLen + rtpLen);
+    //   trueLen += rtpLen;
+    //   offset += rtpLen + frameHeadLen;
+    // }
   }
 
   makeAudio(data, payloadType = -1, simNumber = null, time = -1)

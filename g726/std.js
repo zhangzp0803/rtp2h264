@@ -41,7 +41,13 @@ class Std
         data1.set(data2.subarray(data2Begin, data2End), data1Offset);
     }
 
-    static milliSecondTime()
+      static memcpywithreturn(data1, data1Offset, data2, data2Begin, data2End)
+      {
+        return data2.subarray(data2Begin, data2End)
+      }
+
+
+  static milliSecondTime()
     {
         return new Date().getTime();
     }
@@ -126,12 +132,12 @@ class Result
     static makeErrorResult(errorCode)
     {
         return new Result(null, -1, -1, errorCode);
-    }     
+    }
 }
 
 Result.ErrorCode = class
 {
-    constructor() 
+    constructor()
     {}
 }
 

@@ -1111,7 +1111,12 @@ realTimeVideLoad = {
             // 待播放窗口添加状态
             $('#v_0_Source').attr('data-channel-up', 'true');
             var unique = '111';
-            var url = 'ws://192.168.88.130:1079/tsinglive/000001001916_2?type=1&duration=600';
+            // var url = 'ws://192.168.88.130:1079/tsinglive/000001001916_51?type=1&duration=600'; //音频  设备：863000001001916  指令: 9101330200
+            // var url = 'ws://192.168.88.130:1079/tsinglive/123450000005_5?type=1&duration=600';  //设备： 668623450000005  指令：9101020101
+            var url = 'ws://192.168.88.130:1079/tsinglive/000001001916_2?type=1&duration=600'; //设备： 863000001001916  指令：9101020101
+
+
+
 
             var audioCode = 'g726';
             var videoObj = new MseVideoConversion(
@@ -1142,100 +1147,7 @@ realTimeVideLoad = {
 
 
         }
-        return false;
 
-        var msg = data.obj;
-        for (var i = 0; i < msg.length; i++) {
-            var value = msg[i];
-            var vehicleId = value.vehicleId;
-            if (typeof value.audio === 'object') {
-
-                var videoDataList = null;
-                for (var j = 0; j < info.length; j++) {
-                    if (vehicleId === info[j].vehicleId && value.channelNumber == info[j].channelNum) {
-                        videoDataList = info[j];
-                        break;
-                    }
-                }
-
-                var videoId = null;
-                // 获取节点dom的id
-                var subscribeId = videoDataList.vehicleId + '-' + videoDataList.channelNum;
-                if (subscribeVideoMap.containsKey(subscribeId)) {
-                    var subscribeValues = subscribeVideoMap.get(subscribeId);
-                    videoId = subscribeValues[3];
-                } else {
-                    $('video').each(function () {
-                        if ($(this).attr('data-channel-up') != 'true') {
-                            videoId = this.id;
-                            return false;
-                        }
-                    });
-                    // videoId = 'v_' + subscribeVideoNum + '_Source';
-                    var subscribeArray = [
-                        videoDataList.vehicleId,
-                        videoDataList.channelNum,
-                        videoDataList.channelType,
-                        videoId,
-                        value.unique
-                    ];
-                    subscribeVideoMap.put(subscribeId, subscribeArray);
-                }
-
-                subscribeVideoNum++;
-
-                var videoData = {
-                    vehicleId: videoDataList.vehicleId,
-                    channelNum: videoDataList.channelNum,
-                    channelType: videoDataList.channelType,
-                    mobile: videoDataList.mobile,
-                    streamType: videoDataList.streamType,
-                    domId: videoId,
-                    unique: unique
-                };
-                // var channelType = videoDataList.channelType;
-
-                if (!$.isEmptyObject(videoData)) {
-                    // 待播放窗口添加状态
-                    $('#' + videoId).attr('data-channel-up', 'true');
-                    var unique = value.unique;
-                    var url = 'ws://' + videoRequestUrl + ':' + videoRequestPort + '/' + unique;
-
-                    var audioCode = value.audio.audioCode;
-                    var videoObj = new MseVideoConversion(
-                        {
-                            domId: videoId,
-                            url: url,
-                            codingType: audioCode,
-                            data: videoData,
-                            // 开始播放
-                            onPlaying: function ($state, $this) {
-                                realTimeVideLoad.updateWaitTime();
-                                realTimeVideLoad.videoPlaySuccess($state, $this);
-                            },
-                            // socket关闭成功
-                            socketCloseFun: function ($state) {
-                                realTimeVideLoad.videoCloseSuccess($state);
-                            },
-                            // 连接超时
-                            timeoutFun: function ($state, number) {
-                                if (number < 3) {
-                                    realTimeVideLoad.videoConnectTimeout($state);
-                                } else {
-                                    layer.msg('终端未响应, 请尝试重新订阅');
-                                }
-                            }
-                        }
-                    );
-
-                    var subVideoId = videoData.vehicleId + '-' + videoData.channelNum;
-                    if (createVideoMap.containsKey(subVideoId)) {
-                        createVideoMap.remove(subVideoId);
-                    }
-                    createVideoMap.put(subVideoId, videoObj);
-                }
-            }
-        }
     },
 
     // 视频播放成功事件

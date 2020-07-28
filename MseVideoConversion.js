@@ -527,7 +527,6 @@ class MseVideoConversion {
     if (!this.messageState) {
       this.messageState = true;
     }
-    console.log(event.data)
     /**
      * 对socket发送过来的数据进行处理转换成fmp4
      * 然后调用MSE方法塞进video，进行视频播放
@@ -536,6 +535,7 @@ class MseVideoConversion {
      * 解析rtp数据，获得H264数据
      */
     let rtpFrame = this.rtp.parse(event.data);
+    if(!rtpFrame) return false;
     let payloadType = this.rtp.getPayloadType();
     if(rtpFrame.errorCode == Result.ErrorCode.SUCCESS) {
       /**
