@@ -21,7 +21,7 @@ class AudioCollect {
        * 操作类型
        * BOTH_WAY 对讲，UP_WAY 监听，DOWN_WAY 广播
        * 默认对讲
-       */ 
+       */
       type: 'BOTH_WAY',
       /**
        * 音频编码类型
@@ -208,7 +208,7 @@ class AudioCollect {
         .then((stream) => {
           var audioWasm = window.audioWasmObject;
           if (audioWasm === undefined) {
-            fetch('/clbs/resources/js/g726/audio.wasm').then((response) => response.arrayBuffer())
+            fetch('./g726/audio.wasm').then((response) => response.arrayBuffer())
               .then((bytes) => WebAssembly.instantiate(bytes, this.importObj))
               .then((wasm) => {
                 this.audioWasm = wasm;
@@ -277,7 +277,7 @@ class AudioCollect {
   socketMessage(event) {
     this.audioDataParsing(event.data);
   }
-  
+
   audioDataParsing(audioData) {
     let rtpFrame = this.rtp.parse(audioData);
     if (rtpFrame.errorCode === Result.ErrorCode.SUCCESS && rtpFrame.type === Result.Type.AUDIO) {
@@ -314,7 +314,7 @@ class AudioCollect {
   createAudioCoder() {
     if (this.rtp.getPayloadType() === 8) {
       this.coderType = this.CODEC_TYPE.G726;
-      return new G726(this.audioWasm, this.memory, 4);
+      return new G726(this.audioWasm, this.memory, 5);
     } else if (this.rtp.getPayloadType() === 26){
       this.coderType = this.CODEC_TYPE.ADPCMA;
       return new Adpcm(this.audioWasm, this.memory);
@@ -429,7 +429,7 @@ class AudioCollect {
      */
     if (this.audioCtx != null) {
       let inputBuffer = audioEvent.inputBuffer.getChannelData(0);
-      let pcmFloat32Data = Std.downsampleBuffer(new Float32Array(inputBuffer.buffer), 8000, this.audioCtx.sampleRate);
+      let pcmFloat32Data = Std.downsampleBuffer(new Float32Array(inputBuffer.buffer), 8000, 40000);
       let pcm16BitData = Std.floatToShortData(pcmFloat32Data);
       let g726OffsetBuffer = this.g726TempBuffer;
       this.g726TempBuffer = this.g726TempBuffer == null ? new Int16Array(pcm16BitData.length) : new Int16Array(pcm16BitData.length + g726OffsetBuffer.length);
@@ -440,7 +440,7 @@ class AudioCollect {
         this.g726TempBuffer.set(pcm16BitData);
       }
       let i = 0;
-      let step = 320;
+      let step = 160;
       for(; i < this.g726TempBuffer.length; i += step) {
         let pcmPacketData = this.g726TempBuffer.slice(i, i + step);
         if(pcmPacketData.length === step) {
@@ -528,7 +528,7 @@ class AudioCollect {
         this.options.socketTimeoutFun();
       }
     }, 8000);
-  }   
+  }
 
   /**
    * 插件数据重置

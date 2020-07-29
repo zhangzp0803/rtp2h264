@@ -66,12 +66,173 @@ var noZero = function(data) {
 
 realTimeVideLoad = {
 
+    // 主动安全视频对讲功能
+      callSelectFun: function () {
+        this.callOrder();
+      },
+
+      /*---------------------------------对讲-----------------------------------*/
+      /**
+       * 对讲事件
+       * @param riskId 对讲的风险的UUID
+       * @param riskNumber 对讲的风险的编号
+       * @param warningTime 对讲的风险的报警时间,格式为 yy-MM-DD HH:MM:ss
+       */
+      callOrder: function () {
+          this.callPlay_test();
+        // var self = $('#callSelect');
+        //
+        // if (combatCallList === '' && !self.hasClass('active')) {
+        //   alert('该监控对象没有对讲通道,不支持对讲功能');
+        //   return;
+        // }
+        // if (combatCallList.length === 0) {
+        //   alert('当前监控对象没有音频通道号');
+        //   return;
+        // }
+        // if (!self.hasClass('active')) {
+        //   self.addClass('active');
+        //   realtimeMonitoringVideoSeparate.callPlay();//打开
+        // } else {
+        //   realtimeMonitoringVideoSeparate.callClose();//关闭
+        //   self.removeClass('active');
+        // }
+      },
+      callPlay_test: function () {
+        var url = 'ws://192.168.88.130:1079/tsinglive/000001001916_51?type=1&duration=600';
+        window.audioMse = new AudioCollect(
+          {
+            url: url,//websocket连接地址
+            type: 'BOTH_WAY',
+            codingType: '8',//音频编码格式
+            //开始播放回调
+            openAudioSuccess: function ($state) {
+
+            },
+            //连接超时回调
+            socketTimeoutFun: function ($state) {
+            },
+            //关闭后回调
+            socketCloseFun: function ($state) {
+            },
+          }
+        );
+
+      },
+      /**
+       * 打开对讲
+       */
+      callPlay: function () {
+        if (combatCallList.length <= 0) {
+          return;
+        }
+        //组装数据
+        var audioParam = {
+          vehicleId: combatCallList[0].vehicleId,
+          requestType: 0,
+          channelNum: combatCallList[0].logicChannel,
+          simNumber: combatCallList[0].mobile,
+          // orderType: 1,
+          streamType: combatCallList[0].streamType,
+          channelType: combatCallList[0].channelType,
+        };
+
+        json_ajax("POST", "/clbs/adas/v/monitoring/talkBack", "json", false, audioParam, function (data) {
+          if (data.success === true && data.obj != null) {
+            data = data.obj;
+
+            if (!data.talkFlag) {
+              layer.msg('对讲通道号被占用，请稍后再试...');
+              return;
+            }
+
+            talkStartTime = data.talkStartTime;
+
+            var simcardNumber = combatCallList[0].mobile;
+            var simCardLength = simcardNumber.length;
+            if (simCardLength < 12) {
+              for (var i = 0; i < 12 - simCardLength; i++) {
+                simcardNumber = '0' + simcardNumber;
+              }
+            }
+            var codingType = data.audio.audioCode,
+              unique = data.unique;
+
+            var url = 'ws://' + videoRequestUrl + ':' + audioRequestPort + '/' + unique;
+            //保存对讲通道数据
+            var callPlayData = {
+              vehicleId: combatCallList[0].vehicleId,
+              channelNum: combatCallList[0].logicChannel,
+              channelType: combatCallList[0].channelType,
+              mobile: combatCallList[0].mobile,
+              streamType: combatCallList[0].streamType,
+              unique: unique
+            };
+
+            //存储对讲实例对象
+            callPlayData.audioMse = new AudioCollect(
+              {
+                url: url,//websocket连接地址
+                type: 'BOTH_WAY',
+                codingType: codingType,//音频编码格式
+                //开始播放回调
+                openAudioSuccess: function ($state) {
+
+                },
+                //连接超时回调
+                socketTimeoutFun: function ($state) {
+                },
+                //关闭后回调
+                socketCloseFun: function ($state) {
+                },
+              }
+            );
+
+            callPlayListMap = callPlayData;
+          }
+        });
+      },
+
+      /**
+       * 关闭对讲
+       */
+      callClose: function (riskId, warningTime) {
+        var item = callPlayListMap;
+
+        if (!item) {
+          return;
+        }
+
+        var param = {
+          vehicleId: item.vehicleId,
+          // orderType: 2,
+          channelNum: item.channelNum,
+          control: 4,
+          closeVideoType: 0,
+          changeStreamType: 0,
+          channelType: item.channelType,
+          requestType: 0,
+          // unique: item.unique,
+          // riskId: riskId,
+          // talkStartTime: talkStartTime,
+          // warningTime: warningTime,
+        };
+
+        json_ajax("POST", "/clbs/adas/v/monitoring/endTalkBack", "json", false, param, function () {
+          talkStartTime = null;
+          item.audioMse.closeWebsocket();//关闭
+        });
+      },
+
+  /*---------------------------------对讲End -----------------------------------*/
     init: function () {
 
 
 
         // 视频socket接口订阅
-        realTimeVideLoad.subscribeVideoDataAssemble();
+        // realTimeVideLoad.subscribeVideoDataAssemble();
+        this.callSelectFun = this.callSelectFun.bind(this);
+        $('#callSelect').on('click', this.callSelectFun);
 
     },
     //获取地址栏参数
@@ -1144,7 +1305,7 @@ realTimeVideLoad = {
                     }
                 }
             );
-          videoObj.openVideoVoice(); //打开声音
+            videoObj.openVideoVoice(); //打开声音
 
         }
 

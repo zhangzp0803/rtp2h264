@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06aef735-c7fd-4e3d-bc0e-8b6d785619fd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/g726/adpcm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/g726/audio.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/g726/g711.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/g726/g726.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/g726/pcm_player.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MseVideoConversion.js" afterPath="$PROJECT_DIR$/MseVideoConversion.js" />
+      <change beforePath="$PROJECT_DIR$/g726/audio.js" afterPath="$PROJECT_DIR$/g726/audio.js" />
       <change beforePath="$PROJECT_DIR$/h264.html" afterPath="$PROJECT_DIR$/h264.html" />
       <change beforePath="$PROJECT_DIR$/realTimeVideoLoad1.js" afterPath="$PROJECT_DIR$/realTimeVideoLoad1.js" />
     </list>
@@ -27,8 +22,8 @@
       <file leaf-file-name="rtp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/g726/rtp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+            <state relative-caret-position="181">
+              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -37,8 +32,8 @@
       <file leaf-file-name="h264.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h264.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="616">
+              <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -49,8 +44,8 @@
       <file leaf-file-name="g726.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/g726/g726.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state relative-caret-position="28">
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -59,17 +54,17 @@
       <file leaf-file-name="realTimeVideoLoad1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/realTimeVideoLoad1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="1115" column="116" lean-forward="false" selection-start-line="1115" selection-start-column="101" selection-end-line="1115" selection-end-column="116" />
+            <state relative-caret-position="394">
+              <caret line="1259" column="25" lean-forward="true" selection-start-line="1259" selection-start-column="25" selection-end-line="1259" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#50229#51164#0" expanded="false" />
-                <marker date="1595933250937" expanded="true" signature="22628:22642" ph="..." />
-                <marker date="1595933250937" expanded="true" signature="64417:64428" ph="..." />
-                <marker date="1595933250937" expanded="true" signature="132747:132753" ph=" " />
-                <marker date="1595933250937" expanded="true" signature="133557:133563" ph=" " />
-                <marker date="1595933250937" expanded="true" signature="179441:179478" ph="..." />
-                <marker date="1595933250937" expanded="true" signature="179606:179643" ph="..." />
+                <element signature="e#55132#56067#0" expanded="false" />
+                <marker date="1596001705842" expanded="true" signature="27531:27545" ph="..." />
+                <marker date="1596001705842" expanded="true" signature="69322:69333" ph="..." />
+                <marker date="1596001705842" expanded="true" signature="137652:137658" ph=" " />
+                <marker date="1596001705842" expanded="true" signature="138462:138468" ph=" " />
+                <marker date="1596001705842" expanded="true" signature="184346:184383" ph="..." />
+                <marker date="1596001705842" expanded="true" signature="184511:184548" ph="..." />
               </folding>
             </state>
           </provider>
@@ -78,8 +73,8 @@
       <file leaf-file-name="pcm_player.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/g726/pcm_player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="15" />
+            <state relative-caret-position="517">
+              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -95,11 +90,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MseVideoConversion.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MseVideoConversion.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MseVideoConversion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="699" column="0" lean-forward="true" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="697" column="31" lean-forward="false" selection-start-line="697" selection-start-column="23" selection-end-line="697" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="audio.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/g726/audio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="427" column="27" lean-forward="true" selection-start-line="427" selection-start-column="27" selection-end-line="427" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -109,23 +114,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>videoPlaySuccess</find>
-      <find>rtpBufferLenArr</find>
-      <find>v_0_Source</find>
-      <find>100%</find>
-      <find>audioWasm</find>
-      <find>this.audioWasm</find>
-      <find>decode</find>
-      <find>createWebAssemblyObj</find>
-      <find>importObj</find>
-      <find>createMediaSource</find>
-      <find>g726AudioDecoding</find>
-      <find>this.pcmPlayer</find>
-      <find>PCMPlayer</find>
-      <find>ws</find>
-      <find>this._bitCount</find>
       <find>g726Coder</find>
+      <find>_bitCount</find>
+      <find>8000</find>
+      <find>encodeG726</find>
       <find>2</find>
+      <find>callOrder</find>
+      <find>audioMse</find>
+      <find>mediaEncapsulation</find>
+      <find>_audioCtx</find>
+      <find>callPlayData.audioMse</find>
+      <find>websocketInit</find>
+      <find>send</find>
+      <find>audioProcessFun</find>
+      <find>audioDataParsing</find>
+      <find>ws</find>
+      <find>CODEC_TYPE</find>
+      <find>codingType</find>
+      <find>callSelectFun</find>
+      <find>encode</find>
+      <find>.wasm</find>
+      <find>G726</find>
+      <find>new G726</find>
+      <find>createAudioContext</find>
+      <find>this.audioCtx</find>
+      <find>this.audioCtx.sampleRate</find>
+      <find>stream</find>
+      <find>this.mediaStream</find>
+      <find>8</find>
+      <find>startCollectAudio</find>
+      <find>subscribeVideoDataAssemble</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,8 +155,9 @@
         <option value="$PROJECT_DIR$/g726/std.js" />
         <option value="$PROJECT_DIR$/g726/rtp.js" />
         <option value="$PROJECT_DIR$/h264.html" />
-        <option value="$PROJECT_DIR$/realTimeVideoLoad1.js" />
         <option value="$PROJECT_DIR$/MseVideoConversion.js" />
+        <option value="$PROJECT_DIR$/realTimeVideoLoad1.js" />
+        <option value="$PROJECT_DIR$/g726/audio.js" />
       </list>
     </option>
   </component>
@@ -228,7 +247,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595909029389</updated>
       <workItem from="1595909030530" duration="12228000" />
-      <workItem from="1595928596822" duration="6288000" />
+      <workItem from="1595928596822" duration="18968000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1595909100176</created>
@@ -244,11 +263,18 @@
       <option name="project" value="LOCAL" />
       <updated>1595928626139</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="音频调通了">
+      <created>1595936428640</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595936428640</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18516000" />
+    <option name="totallyTimeSpent" value="31196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
@@ -261,7 +287,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -272,6 +298,25 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19940978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -282,7 +327,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="视频调通" />
-    <option name="LAST_COMMIT_MESSAGE" value="视频调通" />
+    <MESSAGE value="音频调通了" />
+    <option name="LAST_COMMIT_MESSAGE" value="音频调通了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -311,13 +357,13 @@
           <caret line="1892" column="52" lean-forward="false" selection-start-line="1892" selection-start-column="48" selection-end-line="1892" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#50229#51164#0" expanded="false" />
-            <marker date="1595933250937" expanded="true" signature="22628:22642" ph="..." />
-            <marker date="1595933250937" expanded="true" signature="64417:64428" ph="..." />
-            <marker date="1595933250937" expanded="true" signature="132747:132753" ph=" " />
-            <marker date="1595933250937" expanded="true" signature="133557:133563" ph=" " />
-            <marker date="1595933250937" expanded="true" signature="179441:179478" ph="..." />
-            <marker date="1595933250937" expanded="true" signature="179606:179643" ph="..." />
+            <element signature="e#55132#56067#0" expanded="false" />
+            <marker date="1596001705842" expanded="true" signature="27531:27545" ph="..." />
+            <marker date="1596001705842" expanded="true" signature="69322:69333" ph="..." />
+            <marker date="1596001705842" expanded="true" signature="137652:137658" ph=" " />
+            <marker date="1596001705842" expanded="true" signature="138462:138468" ph=" " />
+            <marker date="1596001705842" expanded="true" signature="184346:184383" ph="..." />
+            <marker date="1596001705842" expanded="true" signature="184511:184548" ph="..." />
           </folding>
         </state>
       </provider>
@@ -363,23 +409,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/g726/rtp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/g726/adpcm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/g726/audio.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -392,16 +422,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h264.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -423,41 +443,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/g726/pcm_player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="15" />
+        <state relative-caret-position="517">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g726/rtp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/g726/g726.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="28">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MseVideoConversion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="697" column="31" lean-forward="false" selection-start-line="697" selection-start-column="23" selection-end-line="697" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h264.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="1375" column="4" lean-forward="false" selection-start-line="1375" selection-start-column="4" selection-end-line="1375" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/realTimeVideoLoad1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="1115" column="116" lean-forward="false" selection-start-line="1115" selection-start-column="101" selection-end-line="1115" selection-end-column="116" />
+        <state relative-caret-position="394">
+          <caret line="1259" column="25" lean-forward="true" selection-start-line="1259" selection-start-column="25" selection-end-line="1259" selection-end-column="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#50229#51164#0" expanded="false" />
-            <marker date="1595933250937" expanded="true" signature="22628:22642" ph="..." />
-            <marker date="1595933250937" expanded="true" signature="64417:64428" ph="..." />
-            <marker date="1595933250937" expanded="true" signature="132747:132753" ph=" " />
-            <marker date="1595933250937" expanded="true" signature="133557:133563" ph=" " />
-            <marker date="1595933250937" expanded="true" signature="179441:179478" ph="..." />
-            <marker date="1595933250937" expanded="true" signature="179606:179643" ph="..." />
+            <element signature="e#55132#56067#0" expanded="false" />
+            <marker date="1596001705842" expanded="true" signature="27531:27545" ph="..." />
+            <marker date="1596001705842" expanded="true" signature="69322:69333" ph="..." />
+            <marker date="1596001705842" expanded="true" signature="137652:137658" ph=" " />
+            <marker date="1596001705842" expanded="true" signature="138462:138468" ph=" " />
+            <marker date="1596001705842" expanded="true" signature="184346:184383" ph="..." />
+            <marker date="1596001705842" expanded="true" signature="184511:184548" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MseVideoConversion.js">
+    <entry file="file://$PROJECT_DIR$/g726/audio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="699" column="0" lean-forward="true" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+        <state relative-caret-position="265">
+          <caret line="427" column="27" lean-forward="true" selection-start-line="427" selection-start-column="27" selection-end-line="427" selection-end-column="27" />
           <folding />
         </state>
       </provider>
