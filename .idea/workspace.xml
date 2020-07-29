@@ -4,8 +4,6 @@
     <list default="true" id="06aef735-c7fd-4e3d-bc0e-8b6d785619fd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/g726/audio.js" afterPath="$PROJECT_DIR$/g726/audio.js" />
-      <change beforePath="$PROJECT_DIR$/h264.html" afterPath="$PROJECT_DIR$/h264.html" />
-      <change beforePath="$PROJECT_DIR$/realTimeVideoLoad1.js" afterPath="$PROJECT_DIR$/realTimeVideoLoad1.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -103,8 +101,8 @@
       <file leaf-file-name="audio.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/g726/audio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="427" column="27" lean-forward="true" selection-start-line="427" selection-start-column="27" selection-end-line="427" selection-end-column="27" />
+            <state relative-caret-position="461">
+              <caret line="434" column="81" lean-forward="true" selection-start-line="434" selection-start-column="81" selection-end-line="434" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -247,7 +245,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595909029389</updated>
       <workItem from="1595909030530" duration="12228000" />
-      <workItem from="1595928596822" duration="18968000" />
+      <workItem from="1595928596822" duration="20190000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1595909100176</created>
@@ -270,11 +268,18 @@
       <option name="project" value="LOCAL" />
       <updated>1595936428640</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="对讲调试中">
+      <created>1596005913405</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596005913405</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31196000" />
+    <option name="totallyTimeSpent" value="32418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
@@ -328,7 +333,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="视频调通" />
     <MESSAGE value="音频调通了" />
-    <option name="LAST_COMMIT_MESSAGE" value="音频调通了" />
+    <MESSAGE value="对讲调试中" />
+    <option name="LAST_COMMIT_MESSAGE" value="对讲调试中" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -510,8 +516,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/g726/audio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="427" column="27" lean-forward="true" selection-start-line="427" selection-start-column="27" selection-end-line="427" selection-end-column="27" />
+        <state relative-caret-position="461">
+          <caret line="434" column="81" lean-forward="true" selection-start-line="434" selection-start-column="81" selection-end-line="434" selection-end-column="81" />
           <folding />
         </state>
       </provider>

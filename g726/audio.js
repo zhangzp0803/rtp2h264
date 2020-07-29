@@ -429,7 +429,7 @@ class AudioCollect {
      */
     if (this.audioCtx != null) {
       let inputBuffer = audioEvent.inputBuffer.getChannelData(0);
-      let pcmFloat32Data = Std.downsampleBuffer(new Float32Array(inputBuffer.buffer), 8000, 40000);
+      let pcmFloat32Data = Std.downsampleBuffer(new Float32Array(inputBuffer.buffer), 8000, this.audioCtx.sampleRate);
       let pcm16BitData = Std.floatToShortData(pcmFloat32Data);
       let g726OffsetBuffer = this.g726TempBuffer;
       this.g726TempBuffer = this.g726TempBuffer == null ? new Int16Array(pcm16BitData.length) : new Int16Array(pcm16BitData.length + g726OffsetBuffer.length);
